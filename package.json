@@ -1,0 +1,15 @@
+{
+  "name": "code-made",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "An Atom theme based on Made of Code",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/jakemhiller/code-made-theme",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
