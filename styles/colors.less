@@ -1,15 +1,54 @@
-// These colors are specific to the theme. Do not use in a package!
 
-@very-light-gray: #c5c8c6;
-@light-gray: #969896;
-@gray: #373b41;
-@dark-gray: #282a2e;
-@very-dark-gray: #1d1f21;
+// Config -----------------------------------
+@syntax-hue:          222;
+@syntax-saturation:   13%;
+@syntax-brightness:   5%;
 
-@cyan: #8abeb7;
-@blue: #81a2be;
-@purple: #b294bb;
-@green: #b5bd68;
-@red: #cc6666;
-@orange: #de935f;
-@light-orange: #f0c674;
+
+// Monochrome -----------------------------------
+@mono-1: hsl(@syntax-hue, 14%, 71%); // default text
+@mono-2: hsl(@syntax-hue,  9%, 55%);
+@mono-3: hsl(@syntax-hue, 10%, 40%);
+
+// Colors -----------------------------------
+
+@color-red: hsl(352, 100%, 61%);
+@color-red-light: hsl(10, 100%, 64%);
+@color-blue: hsl(222, 100%, 67%);
+@color-blue-light: hsl(198, 100%, 72%);
+@color-blue-bg: hsla(222, 100%, 67%, 0.18);
+@color-green: hsl(100, 100%, 67%);
+@color-green-alt: hsl(86, 57%, 56%);
+@color-green-bg: hsla(169, 41%, 11%, 0.98);
+@color-beige: hsl(44, 41%, 62%);
+@color-beige-light: hsl(53, 89%, 79%);
+@color-seafoam: hsl(164, 100%, 50%);
+@color-orange: hsl(18, 68%, 64%);
+@color-purple: hsl(298, 38%, 53%);
+
+@hue-1:   @color-seafoam;
+@hue-2:   @color-blue-light;
+@hue-3:   @color-red;
+@hue-3-2: @color-red-light;
+@hue-4:   @color-green-alt;
+
+@hue-5:   @color-blue;
+@hue-5-2: @color-blue-light;
+@hue-6:   @color-blue-light;
+@hue-6-2: @color-seafoam;
+
+@hue-7: @color-green;
+@hue-7-2: @color-green-bg;
+
+@hue-8: @color-beige;
+@hue-8-2: @color-beige-light;
+
+@hue-9: @color-orange;
+@hue-10: @color-purple;
+
+// Base colors -----------------------------------
+@syntax-fg:     @mono-1;
+@syntax-bg:     hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+@syntax-gutter: darken(@syntax-fg, 26%);
+@syntax-guide:  fade(@syntax-fg, 15%);
+@syntax-accent: hsl(@syntax-hue, 100%, 66% );
